@@ -1,0 +1,2144 @@
+{
+  "schema_version": "1.0",
+  "team_name": "team vasya",
+  "model": {
+    "mode": "hybrid",
+    "name": "openai/gpt-oss-120b, qwen3.5:4b"
+  },
+  "results": [
+    {
+      "conversation_id": "p1-ru-001",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “Меня зовут Алина”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "All necessary information (the client wants to know where the tariff is shown) was already known when the operator joined, so no discovery was required.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns general product information and does not require identity verification, therefore the criterion is not applicable.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The material request (how to view the tariff) was fully answered with clear instructions, and the client confirmed success, so the consultation is complete.",
+          "evidence_turns": [
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator used a respectful tone and did not ignore any expressed inconvenience; no frustration was shown by the client.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The conversation proceeded without notable lapses; the operator answered directly and the client confirmed resolution.",
+          "evidence_turns": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator gave a farewell but did not provide a summary or an offer of further help, so closure criteria are not met.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult, unauthorized disclosure, or paid‑service bypass was present.",
+          "evidence_turns": [
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 92.31,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-002",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “я Тимур”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "Operator asked a useful missing question about where the client compared tariff names before giving any advice, filling the information gap.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client only seeks explanation of a tariff change, which does not require identity verification.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 5,
+          "rationale": "Operator provided only generic instructions to describe pages and dates, without answering the main request about the reason for the tariff change, yielding minimal substantive help.",
+          "evidence_turns": [
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Operator expressed understanding of the client's concern and used respectful language throughout.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeds without notable lapses; the operator's questions are clarifying rather than redundant, so the flow is smooth.",
+          "evidence_turns": [
+            10,
+            15
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "Operator offered a summary/help suggestion and gave a farewell, completing the closing stage; no opportunity was lost.",
+          "evidence_turns": [
+            19
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or disclosure of confidential information was present.",
+          "evidence_turns": [
+            19
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 81.25,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-003",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 11) contains the RU service greeting “Добрый день” and self-introduction “Я Лера”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "The operator lacked information about the client’s access channel and asked a useful question (turn 11) before giving instructions.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client only asked about tariff commissions, which does not require identity verification.",
+          "evidence_turns": [
+            1
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 5,
+          "rationale": "The client asked where to find the commission for the \"Инвестор\" tariff; the operator only gave a generic hint to open the cabinet without providing the commission details.",
+          "evidence_turns": [
+            13,
+            15
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator used respectful language throughout and did not use informal address; no expressed frustration required special acknowledgment.",
+          "evidence_turns": [
+            11,
+            13
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "The dialogue progressed but contained a notable lapse: the operator never answered the main commission question, though no major sequencing errors occurred.",
+          "evidence_turns": [
+            13,
+            15
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator said goodbye (turn 15) but did not provide a summary of the information or an offer of further help, so the closure criteria are not met.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insulting, illegal, or confidential information disclosure was made by the operator.",
+          "evidence_turns": [
+            15
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 69.38,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-004",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “я Артём”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "Applicable; the operator did not ask a useful missing question before giving the answer about EUR requisites.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "No protected personal data or privileged action was requested, so verification was not required.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "Customer asked how to obtain EUR transfer details; the operator provided the correct steps, fully resolving the request.",
+          "evidence_turns": [
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Applicable and the operator maintained a respectful tone throughout, acknowledging the client politely.",
+          "evidence_turns": [
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "Applicable; the operator repeated a question already implicit in the client’s request, causing one notable lapse.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "Applicable; the operator gave a farewell but did not provide a summary or offer further help, so closure is incomplete.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "Applicable; no critical violation such as insult or unauthorized data disclosure was found.",
+          "evidence_turns": [
+            14
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 69.38,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-005",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Добрый день” and self-introduction “меня зовут Нина”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "All facts needed to answer the client’s questions were already known when the operator joined, so no discovery was required.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns commission information and menu navigation, which are not protected personal data, so identity verification was not required.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 5,
+          "rationale": "The client asked two material requests (who pays the commission and where the requisites are); the operator answered only the second and did not provide the commission answer, yielding a low completeness score.",
+          "evidence_turns": [
+            10,
+            12,
+            14,
+            16
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator apologized and responded politely at turn 14, showing respectful tone and acknowledgment of the client’s difficulty.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeds without notable lapses; the operator clarifies the menu location after the client’s question, maintaining clear flow.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator gave a farewell but did not provide a summary of the solution or an offer of further help, so the closure criteria are not fully met.",
+          "evidence_turns": [
+            16
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violations such as insults or unauthorized disclosure were present in the operator’s messages.",
+          "evidence_turns": [
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 69.23,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-006",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “меня зовут Роман”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "Operator asked a useful missing question (currency of the transfer) before proceeding, filling a material information gap.",
+          "evidence_turns": [
+            13
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": true,
+          "rationale": "The request involved checking a payment, which requires identity verification; verification was confirmed before any action.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 15,
+          "rationale": "Operator addressed the main request by escalating to specialists and obtaining needed currency info, but did not provide a final payment status.",
+          "evidence_turns": [
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Operator expressed understanding of the client’s concern and used a respectful tone throughout.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeded smoothly without notable lapses; operator asked for missing data once and gave clear next steps.",
+          "evidence_turns": [
+            10,
+            13,
+            15
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "Operator provided a summary of next steps and a farewell, and no opportunity to close was lost.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or unauthorized disclosure was observed.",
+          "evidence_turns": [
+            10,
+            15
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 95.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-007",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 11) contains the RU service greeting “Здравствуйте” and self-introduction “я Дамир”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "The operator did not ask any missing‑information question before answering; the material fact about withdrawal timing remained unaddressed.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns updating personal data and timing of a withdrawal, which does not require identity verification.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 5,
+          "rationale": "The operator gave the location of the “Изменение сведений” request (turn 11) but did not answer the second request about when the withdrawal can be retried, so only partial assistance was provided.",
+          "evidence_turns": [
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Operator used a respectful tone and polite wording throughout the dialogue.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "A notable lapse occurs when the operator fails to answer the client’s follow‑up question about when the withdrawal can be attempted again (turn 12), though the conversation otherwise flows.",
+          "evidence_turns": [
+            12,
+            13
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "Operator said farewell (turn 13) but did not provide a summary or an offer of further help, so closure criteria are not met.",
+          "evidence_turns": [
+            13
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insulting, private‑paid service bypass, or confidential data disclosure was observed.",
+          "evidence_turns": [
+            13
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 50.63,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-008",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Добрый день” and self-introduction “Меня зовут Вера”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "All material facts needed to answer were already known when the operator joined, so no discovery question was required.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client asked about the status of a withdrawal request, which does not require verification of personal data.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The client’s request about submitting a second withdrawal was answered correctly – wait for processing and then repeat the withdrawal.",
+          "evidence_turns": [
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator used respectful language and answered politely without any sign of disrespect.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeds without notable lapses; the operator does not force the client to repeat information.",
+          "evidence_turns": [
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator said farewell but did not provide a summary or offer further help, so closure criteria are not met.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or confidential data disclosure was observed.",
+          "evidence_turns": [
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 92.31,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-009",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “я Руслан”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "Material information (account verification) was missing when the operator joined, and the operator did not ask a useful missing question before giving an answer.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": false,
+          "rationale": "The request concerns personal account details, which requires identity verification, but the operator never confirmed verification before responding.",
+          "evidence_turns": [
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 5,
+          "rationale": "The client asked why the withdrawal is limited and to check the account; the operator only stated there is a limitation and did not explain the reason, providing minimal actionable guidance.",
+          "evidence_turns": [
+            12,
+            15,
+            16
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The client expressed frustration about the unconfirmed account and the limitation; the operator gave terse answers without acknowledging the inconvenience.",
+          "evidence_turns": [
+            14,
+            16
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "The operator asked an irrelevant question about the app message (turn 10) which is a notable lapse, but the rest of the conversation proceeds without further major issues.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator said goodbye (turn 16) but did not provide a summary of the outcome nor offer further assistance, so closure criteria are not met.",
+          "evidence_turns": [
+            16
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No abusive language, illegal advice, or disclosure of confidential information was present.",
+          "evidence_turns": [
+            16
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 25.5,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-010",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 11) contains the RU service greeting “Здравствуйте” and self-introduction “я Соня”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "The operator asked a useful missing question (whether the client looks in the app or web) before providing any advice, filling a material information gap.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns checking a portfolio position and downloading a report, which does not require identity verification; therefore verification is not applicable.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "All material requests (checking missing paper, instructions to download the report, advice on selecting the period) were answered correctly and completely.",
+          "evidence_turns": [
+            20,
+            21,
+            26,
+            28
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator consistently used respectful language and acknowledged the client’s inconvenience.",
+          "evidence_turns": [
+            11,
+            19
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The conversation proceeded without notable lapses; no required information was asked twice and the flow remained clear.",
+          "evidence_turns": [
+            11,
+            13,
+            16,
+            21,
+            26,
+            28
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "The operator provided a brief summary (question forwarded) and a courteous farewell, fulfilling closure requirements.",
+          "evidence_turns": [
+            32
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violations such as insults or disclosure of confidential information were found.",
+          "evidence_turns": [
+            11
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 100.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-011",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “Я Лиза”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "Client requested an operator at turn 5 because they could not find the report in the app; the operator provided navigation instructions at turn 10, which resolved the issue.",
+          "evidence_turns": [
+            5,
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": false,
+          "rationale": "The client requested a tax report for a brokerage account, which involves accessing personalized financial data; however, the operator provided navigation instructions without performing any identity verification step before the action.",
+          "evidence_turns": [
+            1,
+            5,
+            10,
+            13
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "Client requested a tax report for the broker account, clarified it was the broker's annual report, and asked for an operator due to phone difficulties. The operator provided actionable steps to download the report via the app menu, confirmed the date range requirement, and received explicit success confirmation from the client.",
+          "evidence_turns": [
+            1,
+            5,
+            7,
+            10,
+            13
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator provided a direct technical solution without acknowledging the client's initial frustration about not finding an agent on their phone.",
+          "evidence_turns": [
+            5,
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The operator provided a clear, actionable solution in turn 10 that resolved the client's request without requiring repetition or clarification from the client.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "The conversation concluded with the client confirming success and thanking the operator, followed by the operator's farewell.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violations found; operator provided correct actionable solution without abuse or privacy breach.",
+          "evidence_turns": [
+            2,
+            5,
+            6,
+            7,
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 58.82,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-012",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “Я Илья”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "The client asked about the language of form 1042-S at turn 1, and the operator repeated this known fact at turn 10 without asking any missing questions.",
+          "evidence_turns": [
+            1,
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client requested to speak with an operator (turns 5-7) after the bot provided information; no identity verification was required for general product information or connecting to a human agent.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 10,
+          "rationale": "The operator confirmed the language of form 1042-S in turn 10, but failed to address the client's specific request for a Russian version or an operator in turns 5-7 before transferring.",
+          "evidence_turns": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator provided a direct factual answer without acknowledging the client's specific request for Russian language availability or expressing empathy regarding the potential inconvenience of switching languages.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The operator repeated the fact already provided by the bot in turn 4, forcing the client to restate their question and wait for a redundant confirmation before connecting.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": null,
+          "rationale": "The conversation ended with the client stating they had finished their inquiry, followed by a system message indicating disconnection without any operator farewell or summary offer.",
+          "evidence_turns": [
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violations found; operator provided correct information and no confidential data was disclosed.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 43.33,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-013",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “Я Кира”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "Client knew the report was on the site and located it in 'News' (turns 1, 5). Operator provided navigation steps but did not ask a useful missing question to confirm if the client found the specific Financial Information section or needed further help before transferring.",
+          "evidence_turns": [
+            1,
+            5,
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client requested general navigation to financial reports and explicitly asked for an operator connection (turns 5-7). The bot provided a generic site location in turn 4 without verifying identity. No protected data or action requiring verification was requested by the client.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The operator provided a specific actionable path (Investors -> Financial Information) to resolve the client's request for financial reporting access, which was confirmed by the client finding the section in 'News'.",
+          "evidence_turns": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator acknowledged the client's search context but failed to address the inconvenience of having to repeat instructions or navigate again, which was a known frustration from the bot interaction.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The bot repeated the client's known fact about being on the website and asked them to connect an operator, causing the client to repeat their location in turn 11.",
+          "evidence_turns": [
+            5,
+            6,
+            7,
+            10
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The conversation ended with the operator offering a farewell ('Хорошего дня!') in turn 12, but there was no explicit summary of the interaction or offer of further assistance before this farewell.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violations found; operator provided correct navigation instructions and polite closure.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 55.38,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-014",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": false,
+          "rationale": "The first operator reply (turn 10) opens with “Привет”, an informal greeting under the team’s RU/KZ business-tone policy. A self-introduction does not make this greeting acceptable for contact.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "The operator used the customer's previously stated context (looking for login on a website) to clarify the specific site and then provided actionable steps based on that known detail.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "No identity verification was required for this support request regarding website navigation.",
+          "evidence_turns": [
+            1,
+            5
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The main request (finding the login) was answered with specific URLs and app instructions, and a correct next step was provided.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "While polite, the operator did not explicitly acknowledge the customer's expressed confusion ('я запутался') or dissatisfaction with the bot.",
+          "evidence_turns": [
+            5,
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue was clear and coherent; the operator understood the customer's frustration and provided a direct solution without requiring the customer to rephrase.",
+          "evidence_turns": [
+            5,
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator offered no summary of the interaction or further assistance before saying goodbye.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insults, private paid service proposals, or confidential information disclosures were present in the conversation.",
+          "evidence_turns": [
+            10,
+            12,
+            14
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 62.5,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-015",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “меня зовут Дина”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "Material information (confirmation that the old account is still registered) was missing when the operator joined, and the operator did not ask a useful question to obtain it.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns a login conflict, which does not require identity verification; no protected data/action was involved.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The client’s main request (understand why the login is blocked) was correctly answered and the operator gave a complete actionable step.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Operator used respectful language throughout and did not display informal address; no expressed frustration was ignored.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "Operator repeated the earlier bot suggestion to use another login, creating one notable lapse, but the conversation otherwise proceeded clearly.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "Operator gave a farewell but did not provide a summary or an offer of further help, so closure criteria are not fully met.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No abusive, illegal, or confidential‑information‑disclosing statements were made by the operator.",
+          "evidence_turns": [
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 69.38,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-016",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “меня зовут Антон”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "When the operator joined, essential information (client device) was missing and the operator did not ask a useful clarification question before answering.",
+          "evidence_turns": [
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client only asked about website navigation, which does not require identity verification.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The client’s material request (why there is no login button and where to log in) was fully answered with the correct information about using tradernet.global.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Operator responded politely throughout, using respectful language and no informal address; no expressed inconvenience was ignored.",
+          "evidence_turns": [
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue progressed without notable lapses; the operator did not repeat already given facts and the conversation flow was clear.",
+          "evidence_turns": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "Operator said goodbye (turn 16) but did not provide a summary or offer further help, so the closure criteria are not met.",
+          "evidence_turns": [
+            16
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or illegal disclosure was observed.",
+          "evidence_turns": [
+            16
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 75.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-017",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 11) contains the RU service greeting “Здравствуйте” and self-introduction “Я Олег”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "The operator asked a useful missing question about the exact ticker before giving instructions, addressing the missing information at entry.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns how to purchase a bond and does not require verification of protected personal data; therefore no identification was needed.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 15,
+          "rationale": "The operator answered the material request by guiding the client to use the ticker and confirming the purchase steps; the main request was resolved, minor details were not asked for.",
+          "evidence_turns": [
+            11,
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator responded politely and acknowledged the client's difficulty without using informal address.",
+          "evidence_turns": [
+            11,
+            13
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeds without notable lapses; the operator’s question was appropriate and the flow remained clear.",
+          "evidence_turns": [
+            11,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator gave a farewell and a brief summary but did not explicitly offer further help, so the closure criteria are not fully met.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violations such as insults or disclosure of confidential information were present.",
+          "evidence_turns": [
+            15
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 87.5,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-018",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “меня зовут Саша”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "Material information (order details/reason) was missing when the operator joined, and the operator did not ask any useful question before responding.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns a generic order‑rejection reason and does not require identity verification.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 0,
+          "rationale": "The client asked for the reason of the order rejection; the operator gave an inaccurate statement and did not resolve the request.",
+          "evidence_turns": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The client expressed frustration, but the operator neither acknowledged it nor showed empathy.",
+          "evidence_turns": [
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The operator provided no useful information, gave an incorrect answer and failed to obtain needed details, constituting a serious dialogue lapse.",
+          "evidence_turns": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": null,
+          "rationale": "The chat was closed by the system without the operator giving a summary or farewell, so closure criteria were not met.",
+          "evidence_turns": [
+            12,
+            13
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or disclosure of confidential information occurred.",
+          "evidence_turns": [
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 21.33,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-ru-019",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Evaluation did not complete"
+    },
+    {
+      "conversation_id": "p1-ru-020",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-021",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-022",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-023",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-024",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-025",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-026",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-027",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-028",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-029",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-ru-030",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-001",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-002",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-003",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-004",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-005",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-006",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-007",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-008",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": false,
+          "rationale": "The first operator reply (turn 10) opens with “Сәлем”, an informal greeting under the team’s RU/KZ business-tone policy. A self-introduction does not make this greeting acceptable for contact.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "The client explicitly requested an operator at turn 5 and provided the site name 'Freedom Finance Global' at that same turn; the operator joined with this information already available.",
+          "evidence_turns": [
+            5,
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "Client requested operator connection at turn 5; bot confirmed at turn 6. Operator asked for site info at turn 10 and provided navigation guidance at turn 12, but no identity verification was performed before the client's success statement.",
+          "evidence_turns": [
+            5,
+            6,
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "Client requested operator transfer at turn 5 and confirmed success at turn 13; bot provided actionable next step at turn 4.",
+          "evidence_turns": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator uses the informal service greeting “Сәлем” at turn 10; this does not meet the team’s RU/KZ business-politeness policy. A useful solution is graded separately.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The client repeated a fact already provided in Turn 5 ('Freedom Finance Global') in Turn 11, causing the operator to provide redundant information about site navigation instead of proceeding directly to assistance.",
+          "evidence_turns": [
+            5,
+            11
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The cited final client message only confirms success/thanks; it does not prove an interrupted opportunity to close. The operator supplied neither a summary/help offer nor a farewell.",
+          "evidence_turns": [
+            12,
+            13
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation found; operator did not insult the client, bypass paid services, or disclose confidential information.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 40.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-kz-009",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-010",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-011",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-012",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-013",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-014",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-kz-015",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-001",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-002",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-003",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the EN service greeting “Hi” and self-introduction “I'm Eva”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "The operator used known context (account area) and clarified the specific location ('Кабинет') before providing the answer.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "No identity verification was required for this general inquiry about pricing plans.",
+          "evidence_turns": [
+            1
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The operator answered the main request (how to see the plan) and provided a correct next step (opening the account area), satisfying the customer's need before transfer.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator did not acknowledge the customer's dissatisfaction regarding downloading a report or their desire to speak to an agent.",
+          "evidence_turns": [
+            5
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue was clear and coherent throughout the interaction.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator said goodbye but failed to summarize the interaction or offer further assistance before ending.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insults, private paid proposals, or confidential information disclosures were present in the conversation.",
+          "evidence_turns": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 75.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-en-004",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-005",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-006",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-007",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-008",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-009",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-010",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-011",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-012",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p1-en-013",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the EN service greeting “Hi” and self-introduction “I'm Adrian”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "The customer explicitly stated they had not used this section before, indicating no prior known details were available to leverage for clarification.",
+          "evidence_turns": [
+            5
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": false,
+          "rationale": "The operator requested personal information (phone number) and proposed a paid service without first confirming the customer's identity or obtaining explicit authorization for such an action.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 0,
+          "rationale": "The operator provided no substantive answer to the customer's request for help with the app; instead, they proposed a private paid service and disconnected the chat.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator did not acknowledge the customer's dissatisfaction or inconvenience regarding the lack of app guidance; they immediately pivoted to a private sale.",
+          "evidence_turns": [
+            13
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The dialogue became incoherent and contradictory when the operator ignored the customer's refusal of paid services and disconnected the chat without resolving the original issue.",
+          "evidence_turns": [
+            12,
+            13
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": null,
+          "rationale": "The conversation was interrupted by a system disconnect before any opportunity for proper closure or further assistance could be offered.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": true,
+          "rationale": "The operator proposed private paid services bypassing the company's standard support structure, which constitutes a critical violation regardless of customer agreement.",
+          "evidence_turns": [
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 20.0,
+        "critical_flag": true
+      }
+    },
+    {
+      "conversation_id": "p1-en-014",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 11) contains the EN service greeting “Hi” and self-introduction “I'm Tyler”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "The customer explicitly stated they had not verified anything and questioned how the operator knew it was their account; sufficient information was available to address this directly.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": false,
+          "rationale": "The operator disclosed personal information (seeing a restriction on 'your' account) without confirming the customer's identity first.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 0,
+          "rationale": "The operator acknowledged seeing a restriction but offered no actionable steps or reasons, only to send it to the team and end the conversation immediately.",
+          "evidence_turns": [
+            13,
+            15
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator did not acknowledge the customer's concern about lack of verification or express politeness regarding their situation.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The dialogue became incoherent when the operator claimed to see the account without verification and then abruptly ended the conversation without answering the customer's question.",
+          "evidence_turns": [
+            11,
+            12,
+            13,
+            15
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator said 'Goodbye' but did not summarize the issue or offer further assistance before ending.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insults, private paid services, or confidential information disclosures were present; the operator's claim of seeing the account was an error, not a critical violation.",
+          "evidence_turns": [
+            11
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 18.82,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p1-en-015",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p4-ru-003",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p4-ru-002",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p4-ru-001",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p4-ru-005",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Rolling token budget safety limit reached. Check real provider quota before changing CQA_TOKEN_BUDGET."
+    },
+    {
+      "conversation_id": "p4-ru-004",
+      "status": "error",
+      "criteria": [],
+      "score": null,
+      "error": "Model provider returned HTTP 413. Check model availability, credentials, context and quota."
+    }
+  ]
+}

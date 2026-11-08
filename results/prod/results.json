@@ -1,0 +1,795 @@
+{
+  "schema_version": "1.0",
+  "team_name": "team vasya",
+  "model": {
+    "mode": "external_api",
+    "name": "openai/gpt-oss-120b"
+  },
+  "results": [
+    {
+      "conversation_id": "p2-ru-001",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “Меня зовут Лена”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "The operator did not ask any missing question about the report section name before answering, so the needed discovery step was omitted.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns locating a tariff and a report section, which does not require identity verification.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 15,
+          "rationale": "The operator correctly told where to view the current tariff (main request resolved) but did not provide the name of the report section, a minor detail.",
+          "evidence_turns": [
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "Operator used respectful language throughout and acknowledged the client’s thanks politely.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeded without notable lapses; the operator answered directly and the client confirmed resolution.",
+          "evidence_turns": [
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "Operator offered further help and said goodbye, providing both a summary/help offer and a farewell.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insulting, illegal, or confidential‑information‑disclosing statements were made by the operator.",
+          "evidence_turns": [
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 75.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-ru-002",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “я Анна”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "The operator did not ask any useful missing question before answering; the needed information about whether the update was processed was not obtained.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns a generic menu navigation and does not require identity verification.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 10,
+          "rationale": "The operator answered the first request (where to change data) but did not resolve the main request about being able to retry the withdrawal.",
+          "evidence_turns": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The client expressed frustration about the repeated failure to withdraw, but the operator gave no acknowledgment or empathetic response.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 4,
+          "rationale": "The operator repeated already‑given information (turn 12) and failed to address the withdrawal question, constituting notable lapses.",
+          "evidence_turns": [
+            12,
+            13
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": null,
+          "rationale": "The operator said farewell and offered further help, but the client’s main issue remained unresolved, so the closing opportunity was lost.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insulting language, privacy breach, or illegal advice was observed.",
+          "evidence_turns": [
+            10,
+            14
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 34.67,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-ru-003",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the RU service greeting “Здравствуйте” and self-introduction “меня зовут Ринат”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "When the operator joined, the exact time and currency of the transfer were unknown, so the operator asked a useful missing question (turn 13) before proceeding.",
+          "evidence_turns": [
+            13
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns checking a payment status, which does not require identity verification; therefore verification is not applicable.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "All material requests (status check, need for screenshot, next actions) were answered correctly and a clear next step was given, so the consultation is fully resolved.",
+          "evidence_turns": [
+            10,
+            13,
+            15,
+            18,
+            20,
+            22
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator acknowledged the client’s inconvenience («Понимаю, что неприятно…») and used a respectful tone throughout.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The conversation proceeded without notable lapses; no unnecessary repetitions or ordering problems occurred.",
+          "evidence_turns": [
+            13
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "The operator gave a brief summary of next steps (no further actions needed), offered thanks, and said farewell, satisfying closure requirements.",
+          "evidence_turns": [
+            22
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult, unauthorized service, or confidential data disclosure was made.",
+          "evidence_turns": [
+            22
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 100.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-ru-004",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": false,
+          "rationale": "The first operator reply (turn 10) lacks a suitable greeting and self‑introduction, so the contact requirement was not met.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "Material facts (reason for withdrawal restriction and verification status) were missing, and the operator did not ask any useful question before answering, so discovery was not performed.",
+          "evidence_turns": [
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": false,
+          "rationale": "The request concerns a withdrawal limitation that requires identity verification, but the operator never confirmed verification before responding.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 5,
+          "rationale": "The client asked why withdrawal fails and how to resolve it; the operator gave only vague statements and no concrete steps, resolving only a minor detail.",
+          "evidence_turns": [
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator never acknowledged the client’s inconvenience or used a respectful business tone, so empathy was not demonstrated.",
+          "evidence_turns": [
+            10,
+            12
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "The operator’s replies were unhelpful and omitted needed clarification, representing one notable lapse in the dialogue flow.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": null,
+          "rationale": "The chat was closed by the system without the operator providing a summary or a farewell, and the opportunity to close was lost.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or unauthorized disclosure was found in the operator’s messages.",
+          "evidence_turns": [
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 16.32,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-kz-001",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the KZ service greeting “Сәлеметсіз бе” and self-introduction “Менің атым Меруерт”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "The operator asked a useful missing question about the currency (turn 10) before providing the solution, filling a material gap.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request was for procedural information only; no protected personal data or privileged action was requested, so verification was not required.",
+          "evidence_turns": [
+            13
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "All material requests (bank‑transfer details) were answered correctly with step‑by‑step instructions and the client confirmed resolution.",
+          "evidence_turns": [
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator used respectful language throughout and thanked the client, showing appropriate politeness.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The conversation proceeded without notable lapses; the operator asked necessary clarification and provided clear guidance.",
+          "evidence_turns": [
+            10,
+            13
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator gave a farewell (turn 15) but did not offer a summary or further help, so closure criteria are not fully met.",
+          "evidence_turns": [
+            15
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No abusive, illegal, or confidential‑information‑disclosing statements were made by the operator.",
+          "evidence_turns": [
+            15
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 92.31,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-kz-002",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the KZ service greeting “Сәлеметсіз бе” and self-introduction “мен Асқармын”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": false,
+          "rationale": "The operator did not ask any useful missing question about why the application was rejected, despite lacking that information.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns a generic explanation of a rejected application and does not require identity verification.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 0,
+          "rationale": "The customer's request to understand the rejection was not answered correctly; the operator gave an incorrect dismissal.",
+          "evidence_turns": [
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": false,
+          "rationale": "The operator responded dismissively and did not acknowledge the customer's confusion or frustration.",
+          "evidence_turns": [
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "The dialogue contains a notable lapse: the operator ignored the core issue and provided an irrelevant statement, but the flow otherwise remains understandable.",
+          "evidence_turns": [
+            10,
+            11
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator did not provide a summary or offer further help, nor did they give a farewell before the chat was closed.",
+          "evidence_turns": [
+            12
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insulting, illegal, or confidential‑information‑disclosing language was used by the operator.",
+          "evidence_turns": [
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 25.63,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-kz-003",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the KZ service greeting “Сәлеметсіз бе” and self-introduction “мен Жанармын”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "All material facts needed to answer the client’s question were already present, so no discovery was required; the operator therefore had no missing information to ask about.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client asked about product usage, which does not require identity verification; therefore the criterion is not applicable.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 10,
+          "rationale": "The client formulated a request (turn 1) about using D‑account funds for stock purchase; the operator answered that request correctly (turn 10) but did not answer the later request about account differences (turn 13), so only part of the material requests were resolved.",
+          "evidence_turns": [
+            10,
+            13
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator remained polite throughout, using respectful language and no informal address, thus meeting the empathy requirement.",
+          "evidence_turns": [
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "The conversation flow contained a notable lapse: the operator offered an unsolicited personal transfer (turn 12) and failed to answer the follow‑up question about account differences, leading to a moderate reduction.",
+          "evidence_turns": [
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "The last operator reply explicitly offers further help AND says goodbye.",
+          "evidence_turns": [
+            14
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No insulting, confidential disclosure, or bypass of company policy was observed in any operator turn.",
+          "evidence_turns": [
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 77.69,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-kz-004",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the KZ service greeting “Сәлеметсіз бе” and self-introduction “менің атым Айгүл”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "The client had not yet formulated any request when the operator joined, so no discovery was needed; the criterion is not applicable.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The client only asked to be connected to an operator, which does not require identity verification; therefore the criterion is not applicable.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": null,
+          "rationale": "The customer never formulated a concrete request before leaving, so consultation cannot be evaluated; the request was not formulated.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator used a polite tone and offered help without any sign of disrespect, meeting the empathy criterion.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The dialogue proceeded without any notable lapses; the only operator turn was a proper greeting before the client exited.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": null,
+          "rationale": "The client left the chat before the operator could provide a summary or farewell, so the closure opportunity was lost and the operator did not close the conversation.",
+          "evidence_turns": [
+            11
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or disclosure of confidential information occurred.",
+          "evidence_turns": [
+            10
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 100.0,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-en-001",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the EN service greeting “Hi” and self-introduction “I'm Nora”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": true,
+          "rationale": "The operator asked a useful missing question (which site the client is on) before giving advice, filling a material information gap.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerned only a public website address, so no identity verification was required.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The client needed the correct sign‑in URL; the operator provided it (turn 14) and the client confirmed it worked (turn 15), fully resolving the request.",
+          "evidence_turns": [
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator responded politely and acknowledged the client's difficulty without using informal address or condescending language.",
+          "evidence_turns": [
+            10,
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 7,
+          "rationale": "The operator initially gave a vague direction (turn 12) requiring clarification, but quickly corrected it (turn 14); this single notable lapse yields a score of 7.",
+          "evidence_turns": [
+            12,
+            14
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": false,
+          "rationale": "The operator said farewell (turn 16) but did not provide a summary or offer further help, so closure criteria are not met.",
+          "evidence_turns": [
+            16
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical violation such as insult or disclosure of confidential information occurred.",
+          "evidence_turns": [
+            12
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 88.13,
+        "critical_flag": false
+      }
+    },
+    {
+      "conversation_id": "p2-en-002",
+      "status": "ok",
+      "criteria": [
+        {
+          "criterion_id": "contact",
+          "value": true,
+          "rationale": "The first operator reply (turn 10) contains the EN service greeting “Hi” and self-introduction “I'm Jordan”. Both contact requirements are satisfied.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "discovery",
+          "value": null,
+          "rationale": "All material facts were already supplied by the client before the operator joined, so no discovery question was required.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "identification",
+          "value": null,
+          "rationale": "The request concerns navigation to a broker report, which does not require identity verification.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "consultation",
+          "value": 20,
+          "rationale": "The operator answered every material request (report download, page section, view current plan, document confirmation) correctly, achieving full resolution.",
+          "evidence_turns": [
+            10,
+            12,
+            14,
+            17,
+            19,
+            21
+          ]
+        },
+        {
+          "criterion_id": "empathy",
+          "value": true,
+          "rationale": "The operator consistently used a respectful tone and acknowledged the client’s difficulty without informal address.",
+          "evidence_turns": [
+            10
+          ]
+        },
+        {
+          "criterion_id": "dialogue",
+          "value": 10,
+          "rationale": "The conversation proceeded without notable lapses; the operator did not repeat already‑given information and maintained clear sequencing.",
+          "evidence_turns": [
+            10,
+            12,
+            14,
+            17,
+            19,
+            21
+          ]
+        },
+        {
+          "criterion_id": "closure",
+          "value": true,
+          "rationale": "The operator provided a brief summary and a clear farewell, and the client indicated the issue was resolved, so closure criteria are met.",
+          "evidence_turns": [
+            21
+          ]
+        },
+        {
+          "criterion_id": "critical",
+          "value": false,
+          "rationale": "No critical policy violation (insult, unauthorized disclosure, or paid‑service bypass) was observed.",
+          "evidence_turns": [
+            21
+          ]
+        }
+      ],
+      "score": {
+        "final_score": 100.0,
+        "critical_flag": false
+      }
+    }
+  ]
+}
