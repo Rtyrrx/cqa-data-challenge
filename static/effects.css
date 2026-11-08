@@ -1,0 +1,37 @@
+/* Native React Bits adaptations. Full source attribution in vendor/react-bits/. */
+body{position:relative;isolation:isolate}
+#freedom-background{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:radial-gradient(ellipse at 80% 10%,#0f5431 0%,#06180c 40%,#000 75%)}
+#freedom-background canvas{display:block;width:100%;height:100%;opacity:.9}
+#freedom-background::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.68)}
+#freedom-background[data-renderer=fallback] canvas{display:none}
+#cqa-app{position:relative;z-index:1}
+:root[data-theme=light] #freedom-background{background:radial-gradient(ellipse at 80% 10%,#dcf2df 0%,#fff 72%)}
+:root[data-theme=light] #freedom-background::after{background:rgba(255,255,255,.42)}
+body[data-page=conversations] #freedom-background::after{background:rgba(0,0,0,.82)}
+:root[data-theme=light] body[data-page=conversations] #freedom-background::after{background:rgba(255,255,255,.68)}
+.review-panels>.conversation,.review-panels>.assessment{background:rgba(0,0,0,.7)}
+:root[data-theme=light] .review-panels>.conversation,:root[data-theme=light] .review-panels>.assessment{background:rgba(255,255,255,.8)}
+.headline-stage{position:relative;isolation:isolate;min-width:0}
+.headline-stage h1{position:relative;z-index:2}
+.logo-reveal{position:absolute;inset:-48px -10px -80px -35px;z-index:0;pointer-events:none;opacity:.34}
+.logo-reveal canvas,.logo-reveal img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.logo-reveal[data-renderer=webgl2] img{visibility:hidden}
+.logo-reveal:not([data-renderer=webgl2]) canvas{visibility:hidden}
+:root[data-theme=light] .logo-reveal{opacity:.21}
+/* Comet Dial is a visualization: its geometry animates; its numeric score stays exact. */
+#score-ring.comet-dial{position:relative;isolation:isolate;width:150px;height:150px;flex-shrink:0;padding:0;background:none;border:0;border-radius:0;user-select:none}
+#score-ring.comet-dial>div{position:absolute;inset:0;z-index:1;background:none;border-radius:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+#score-ring.comet-dial strong{font-size:31px;font-weight:400}
+.comet-dial-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.comet-track,.comet-lit,.comet-trail{fill:none;stroke-linecap:round}
+.comet-track{stroke:var(--fg);stroke-width:3;opacity:.18}
+.comet-lit{stroke:var(--score-color);stroke-width:3;opacity:.8}
+.comet-trail{stroke:var(--score-color)}
+.comet-head{fill:var(--score-color)}
+[data-effects-toggle]{font-size:11px;min-height:36px;border-bottom:1px solid var(--line);white-space:nowrap}
+.hero-motion-control{display:block;margin-top:18px;margin-left:auto}
+.footer-bottom #effects-toggle{order:2;margin-left:auto}
+.footer-bottom>a:last-child{order:3;margin-left:18px}
+@media(max-width:740px){.logo-reveal{inset:-20px 5px -35px -10px;opacity:.3}.headline-stage{max-width:100%}#score-ring.comet-dial{width:128px;height:128px}#score-ring.comet-dial strong{font-size:28px}.footer-bottom{flex-wrap:wrap}.footer-bottom #effects-toggle{order:4;margin-left:0;font-size:10px}.footer-bottom>a:last-child{margin-left:auto}.score-overview h3{font-size:26px}}
+.page-content>section{scroll-margin-top:96px}
+body[data-effects-paused=true] *,body[data-effects-paused=true] *::before,body[data-effects-paused=true] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
